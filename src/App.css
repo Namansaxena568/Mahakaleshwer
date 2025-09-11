@@ -206,7 +206,7 @@ a {
 .quick-links {
   
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: -4rem auto 0 auto; /* negative margin for overlap effect */
   position: relative;
   z-index: 30;
@@ -279,7 +279,7 @@ a {
 
 /* Gallery Section */
 .gallery-section {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 15px;
 }

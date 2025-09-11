@@ -161,21 +161,16 @@ export default function Home() {
       </section>
 
       {/* History Section */}
-      <section className="history">
-        <h2>📜 History & Significance</h2>
-        <p>
-          The Mahakaleshwar temple finds mention in several ancient scriptures,
-          including the <b>Puranas</b>. It is believed that Lord Shiva appeared
-          here to protect his devotees from a demon named Dushana, and hence the
-          Jyotirlinga came to be known as Mahakal (the Lord of Time and Death).
-        </p>
-        <p>
-          The temple was rebuilt during the Maratha period under Rani Ahilyabai
-          Holkar in the 18th century, and it has since stood as a center of faith
-          and devotion. The presence of the Jyotirlinga is believed to ensure the
-          spiritual well-being of devotees and grant them liberation (Moksha).
-        </p>
-      </section>
+<section className="history">
+  <h2>📜 इतिहास और महत्त्व</h2>
+  <p>
+    महाकालेश्वर मंदिर का उल्लेख कई प्राचीन ग्रंथों में मिलता है, जिनमें <b>पुराण</b> प्रमुख हैं। ऐसा माना जाता है कि भगवान शिव यहाँ अपने भक्तों को दुष्ट राक्षस दुषाना से बचाने के लिए प्रकट हुए थे। इसी कारण इस ज्योतिर्लिंग को महाकाल (काल और मृत्यु के स्वामी) कहा जाता है।
+  </p>
+  <p>
+    18वीं शताब्दी में मराठा काल के दौरान रानी अहिल्याबाई होल्कर ने इस मंदिर का पुनर्निर्माण कराया। तब से यह श्रद्धा और भक्ति का एक प्रमुख केंद्र बनकर खड़ा है। यहाँ के ज्योतिर्लिंग की उपस्थिति भक्तों के आध्यात्मिक कल्याण और मोक्ष की प्राप्ति का प्रतीक मानी जाती है।
+  </p>
+</section>
+
 
       {/* Rituals Section */}
       <section className="rituals">

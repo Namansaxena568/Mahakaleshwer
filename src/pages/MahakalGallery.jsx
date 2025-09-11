@@ -5,7 +5,7 @@ import "../App.css"; // apna css file import karo
 
 const galleryImages = [
   {
-    url: "../Images/Mahakaleshwar-Temple-Ujjain.jpg",
+    url: "../Images/Mahakaleshwar.jpg",
     title: "Shree Mahakaleshwar Jyotirlinga",
   },
   {
