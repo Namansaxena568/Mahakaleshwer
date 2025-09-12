@@ -1708,3 +1708,338 @@ a {
   .login-title { font-size: 20px; }
   .input-field { padding: 10px; }
 }
+
+/* Glowing Logo */
+.logo {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 40px #ff6600;
+  animation: glow 1.5s infinite alternate;
+}
+
+.logo span:nth-child(even) {
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 40px #ff6600;
+  animation-delay: 0.2s;
+}
+
+@keyframes glow {
+  from {
+    transform: translateY(0px);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+
+.tagline {
+  display: inline-block;
+  background: linear-gradient(45deg, #ffcc00, #ff8800);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* When navbar is scrolled */
+.navbar.scrolled .tagline {
+  color: #fff;
+}
+
+.temple-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.7;
+  background: #f9f9f9;
+}
+
+.temple-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.temple-section h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.temple-section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.temple-section ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.temple-section ul li {
+  margin-bottom: 10px;
+}
+
+.temple-section b {
+  color: #000;
+}
+
+.temple-section i {
+  color: #555;
+}
+
+/* Main Section */
+.contact-section {
+  background: linear-gradient(to bottom, #fff7ed, #fef3c7);
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  color: #c2410c;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #555;
+  font-size: 18px;
+}
+
+/* 2 Column Grid */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Contact Info Card */
+.contact-info {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #444;
+}
+
+.contact-info a {
+  color: #ea580c;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Form Card */
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  color: #c2410c;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.contact-form button {
+  width: 100%;
+  background: linear-gradient(45deg, #f97316, #facc15);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
+}
+
+/* Booking Section */
+.booking-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Booking Card */
+.booking-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  animation: slideLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.booking-card h2 {
+  color: #c2410c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245,158,11,0.2);
+}
+
+.booking-form button {
+  width: 100%;
+  background: linear-gradient(45deg,#f97316,#facc15);
+  color: #fff;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.booking-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(249,115,22,0.4);
+}
+
+/* Info Card */
+.info-card {
+  background: #fff7ed;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  animation: slideRight 1s ease forwards;
+  opacity: 0;
+}
+
+.info-card h2 {
+  color: #b45309;
+  margin-bottom: 15px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.info-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Popup */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  animation: fadeDown 0.6s ease forwards;
+}
+
+.popup button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes slideLeft {
+  0% {opacity: 0; transform: translateX(-40px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes slideRight {
+  0% {opacity: 0; transform: translateX(40px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeDown {
+  0% {opacity: 0; transform: translateY(-30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}

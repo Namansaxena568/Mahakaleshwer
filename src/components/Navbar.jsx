@@ -8,13 +8,8 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -22,39 +17,24 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-left">
-        <div className="logo">seva</div>
+        {/* Glowing Logo */}
+        <div className="logo">
+          <span>s</span><span>e</span><span>v</span><span>a</span>
+        </div>
         <div className="tagline">MAHAKALESHWAR, UJJAIN</div>
       </div>
 
       {/* Desktop Menu */}
       <ul className="navbar-right">
-        <li>
-          <NavLink to="/" className="nav-link">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/booking" className="nav-link">
-            Bhasm Aarti Booking
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/temple" className="nav-link">
-            Temple Info
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Contact" className="nav-link">
-            Contact
-          </NavLink>
-        </li>
+        <li><NavLink to="/" className="nav-link">Home</NavLink></li>
+        <li><NavLink to="/booking" className="nav-link">Bhasm Aarti Booking</NavLink></li>
+        <li><NavLink to="/temple" className="nav-link">Temple Info</NavLink></li>
+        <li><NavLink to="/Contact" className="nav-link">Contact</NavLink></li>
       </ul>
 
       {/* Mobile Hamburger */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
 
       {/* Mobile Menu */}
