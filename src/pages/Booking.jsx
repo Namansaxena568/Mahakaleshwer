@@ -102,7 +102,7 @@ export default function Booking() {
 
   return (
     <div>
-      {/* Hero Section
+      {/* Hero Section */}
   <section className="hero-section">
     <div className="hero-overlay"></div>
 
@@ -114,7 +114,7 @@ export default function Booking() {
       <div className="hero-divider"></div>
       <p className="hero-tagline">DARSHAN BOOKING</p>
     </div>
-  </section> */}
+  </section>
 
       {/* Main Booking Container */}
       <div className="booking-page" style={{ display: "flex", gap: "40px", padding: "20px" }}>
