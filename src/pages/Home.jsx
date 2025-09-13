@@ -1,25 +1,11 @@
-import { useEffect, useState } from "react";
 import MahakalGallery from "./MahakalGallery";
 import "../App.css";
 
 export default function Home() {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setOffset(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="home">
-      {/* Hero Section with Parallax */}
-      <section
-        className="hero-section parallax"
-        style={{
-          transform: `translateY(${offset * 0.3}px) scale(${1 + offset * 0.0002})`,
-        }}
-      >
+      {/* Hero Section (No Parallax Now) */}
+      <section className="hero-section">
         <div className="hero-overlay"></div>
 
         <div className="hero-content">
