@@ -60,7 +60,7 @@ export default function Booking() {
 
     try {
       const response = await fetch(
-        "http://192.168.1.28:8000/api/bookings/bookings/",
+        "http://142.93.221.230/api/bookings/bookings/",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
