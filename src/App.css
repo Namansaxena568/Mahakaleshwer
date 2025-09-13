@@ -1919,6 +1919,7 @@ a {
 .booking-card {
   background: #fff;
   padding: 30px;
+  margin-top: 50px;
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   animation: slideLeft 1s ease forwards;

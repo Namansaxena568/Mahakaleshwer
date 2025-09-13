@@ -102,19 +102,11 @@ export default function Booking() {
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero Section
   <section className="hero-section">
     <div className="hero-overlay"></div>
 
-    <div className="hero-content">
-      <p className="hero-subtitle">Shri</p>
-      <h1 className="hero-title">Mahakaleshwar</h1>
-      <p className="hero-location">Mandir, Ujjain</p>
-
-      <div className="hero-divider"></div>
-      <p className="hero-tagline">DARSHAN BOOKING</p>
-    </div>
-  </section>
+  </section> */}
 
       {/* Main Booking Container */}
       <div className="booking-page" style={{ display: "flex", gap: "40px", padding: "20px" }}>
@@ -227,7 +219,7 @@ export default function Booking() {
           </form>
         </div>
 
-   <div className="info-card">
+   {/* <div className="info-card">
   <h2>📌 बुकिंग और मंदिर जानकारी</h2>
 
   <ul>
@@ -259,7 +251,7 @@ export default function Booking() {
   <p style={{ marginTop: "10px", fontWeight: "600", color: "#444" }}>
     📍 स्थान: श्री महाकालेश्वर ज्योतिर्लिंग मंदिर, उज्जैन, मध्य प्रदेश, भारत
   </p>
-</div>
+</div> */}
 
       </div>
 

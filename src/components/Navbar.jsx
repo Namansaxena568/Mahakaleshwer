@@ -43,7 +43,9 @@ export default function Navbar() {
         <NavLink to="/booking" className="nav-link" onClick={() => setMenuOpen(false)}>Bhasm Aarti Booking</NavLink>
         <NavLink to="/temple" className="nav-link" onClick={() => setMenuOpen(false)}>Temple Info</NavLink>
         <NavLink to="/Contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</NavLink>
+        
       </div>
+      
     </nav>
   );
 }
